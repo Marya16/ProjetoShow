@@ -1,24 +1,31 @@
-﻿namespace ProjetoShow;
+﻿
+using Microsoft.Maui.Controls;
+using System;
 
-public partial class MainPage : ContentPage
+namespace ProjetoShow
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+        private void OnCorrectClicked(object sender, EventArgs e)
+        {
+            // Handle the logic for "Certas" button click
+        }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        private void OnRemoveWrongClicked(object sender, EventArgs e)
+        {
+            // Handle the logic for "Retirar 1 errada" button click
+        }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        private void OnAskStudentClicked(object sender, EventArgs e)
+        {
+            // Handle the logic for "Universitário" button click
+        }
+    }
 }
+
 

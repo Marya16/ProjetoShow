@@ -29,7 +29,7 @@ public class Questao
      {
 
      }
-     
+      
     public Questao(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
        labelPergunta = pg;
@@ -47,13 +47,23 @@ public class Questao
      {
          if (RespostaCorreta == RespostaRespondida) 
        { 
-        var btn = Qual btn (RespostaRespondida);
-            btn BackgroudColor = Colors Green;
+        var btn = QualBTN (RespostaRespondida);
+            btn.BackgroudColor = Colors.Green;
             return true;
        }
          else 
+         
        { 
+        var btnCorreta = QualBTN (RespostaCorreta);
+        var btnIncorreto = QualBTN (RespostaRespondida);
+        btnCorreto.BackgroudColor = Colors.Red;
+        btnIncorreto.BackgroudColor = Colors.Green;
         return false;
        }
-     }  
+     } 
+     private Button QualBTN(int RespostaRespondida) 
+     {
+       if (RespostaRespondida == RespostaCorreta);
+     }
+     
 }
