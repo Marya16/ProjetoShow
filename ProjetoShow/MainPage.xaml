@@ -21,21 +21,35 @@
                 <ColumnsDefinitions Width="*"/>
          </Grid.ColumnDefinitions>
 
-        <Frame CornerRadius="20" 
-               Padding="20" 
-               Margin="20" 
-               BackgroundColor="White"/>
-               
-           
-                
-                <Label Text="Questão:" 
-                        FontAttributes="Bold" 
-                        Padding="10,10,0,0" />
+          <Image Source="milhao.png"
+                 Aspect="AspectFill"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="3"/>
 
-                 
-                    <Button x:Name="AnswerA" 
-                            Text="A-" 
-                            HeightRequest="40"  />
+          <Frame Opacity=".6"
+                 CornerRadius="20" 
+                 BorderColor="Black"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="3">
+               
+          <Label Text="Questão:" 
+                 HorizontalTextAlignment="20" 
+                 FontSize="18"
+                 TextColor="Black"/>
+
+            </Frame>     
+
+                    <Button Text="A-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
                     <Button x:Name="AnswerB" 
                             Text="B-" 
