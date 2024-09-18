@@ -16,9 +16,9 @@
                 <RowDefinition Height="100"/>
           </Grid.RowDefinitions>
           <Grid.ColumnDefinitions>
-                <ColumnsDefinitions Width="*"/>
-                <ColumnsDefinitions Width="*"/>
-                <ColumnsDefinitions Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
          </Grid.ColumnDefinitions>
 
           <Image Source="milhao.png"
@@ -51,38 +51,83 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="AnswerB" 
-                            Text="B-" 
-                            HeightRequest="40"  />
+                    <Button Text="B-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="AnswerC"
-                            Text="C-" 
-                            HeightRequest="40"  />
+                    <Button Text="C-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="AnswerD"
-                            Text="D-"
-                            HeightRequest="40"  />
+                    <Button Text="D-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="5"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="AnswerE"
-                            Text="E-" 
-                            HeightRequest="40"  />
-              
+                    <Button Text="E-"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,10"
+                            FontSize="18"
+                            BorderColor="Black"
+                            Grid.Row="6"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"/>
 
                
-                <StackLayout Orientation="Horizontal" 
-                            HorizontalOptions="Center" 
-                            Spacing="10" Margin="20,0,0,0"/>
+                        <Button Text="Corretas" 
+                                BorderWidth="2"
+                                Padding=".12"
+                                TextColor="Black"
+                                BackgroundColor="White"
+                                Margin="0,0,0,10"
+                                FontSize="18"
+                                BorderColor="Black"
+                                Grid.Row="7"
+                                Grid.Column="0"/>
+                               
+                       <Button Text="Retirar 1" 
+                                BorderWidth="2"
+                                Padding=".12"
+                                TextColor="Black"
+                                BackgroundColor="White"
+                                Margin="0,0,0,10"
+                                FontSize="18"
+                                BorderColor="Black"
+                                Grid.Row="7"
+                                Grid.Column="1"/>
 
-                    <Button Text="Certas" 
-                            WidthRequest="80" 
-                            Clicked="OnCorrectClicked" />
-                            Grid.Row=""
-                    <Button Text="Retirar 1 errada"
-                            WidthRequest="120" 
-                            Clicked="OnRemoveWrongClicked" />
+                      <Button Text="Universtários"  
+                              BorderWidth="2"
+                              Padding=".12"
+                              TextColor="Black"
+                              BackgroundColor="White"
+                              Margin="0,0,0,10"
+                              FontSize="18"
+                              BorderColor="Black"
+                              Grid.Row="7"
+                              Grid.Column="2"/> 
 
-                    <Button Text="Universitário"    
-                            WidthRequest="120" 
-                            Clicked="OnAskStudentClicked" />
-                </StackLayout>
+                </Grid>
    </ContentPage>
