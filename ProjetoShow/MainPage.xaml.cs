@@ -6,27 +6,27 @@ namespace ProjetoShow;
         Gerenciador gerenciador;
         public MainPage()
         {
-        gerenciador = new Gerenciador(labelPerg, btnResp1, btnResp2, btnResp3, btnRespo4, btnResp5);
+        gerenciador = new Gerenciador(labelPergunta, btn1, btn2, btn3 , btn4, btn5);
         }
         void OnOnBt1Clicked (object sender, EventArgs args)
         {
-          gerenciador.VerificarResposta(1);
+          gerenciador.VerificaResposta(1);
         }
          void OnOnBt2Clicked (object sender, EventArgs args)
         {
-          gerenciador.VerificarResposta(2);
+          gerenciador.VerificaResposta(2);
         }
          void OnOnBt3Clicked (object sender, EventArgs args)
         {
-          gerenciador.VerificarResposta(3);
+          gerenciador.VerificaResposta(3);
         }
          void OnOnBt4Clicked (object sender, EventArgs args)
         {
-          gerenciador.VerificarResposta(4);
+          gerenciador.VerificaResposta(4);
         }
          void OnOnBt5Clicked (object sender, EventArgs args)
         {
-          gerenciador.VerificarResposta(5);
+          gerenciador.VerificaResposta(5);
         }
 
    }

@@ -4,11 +4,11 @@ public class Gerenciador
     List<Questao>ListaQuestoes= new List<Questao>();
     List<int>ListaQuestoesRespondidas= new List<int>();
     Questao QuestaoCorrente;
-    public Gerenciador(labelPerg, btnResp1, btnResp2, btnResp3, btnRespo4, btnResp5)
+    public Gerenciador( Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnResp4, Button btnResp5)
     {
         CriaPerguntas(labelPerg, btnResp1, btnResp2, btnResp3 , btnResp4, btnResp5);
     }
-    void CriaPerguntas(Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnRespo4, Button btnResp5)
+    void CriaPerguntas(Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnResp4, Button btnResp5)
     {
         var Q1 = new Questao();
         Q1.ConfigurarDesenho(labelPerg, btnResp1, btnResp2, btnResp3 , btnResp4, btnResp5);
@@ -44,7 +44,7 @@ public class Gerenciador
     void ProximaQuestao()
     {
         var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
-        while (Lista QuestoesRespondidas.Contains(numAleat))
+        while (listaQuestoesRespondidas.Contains(numAleat))
         numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
         ListaQuestoesRespondidas.Add(numAleat);
         QuestaoCorrente = ListaQuestoes[numAleat];

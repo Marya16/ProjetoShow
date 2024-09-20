@@ -1,6 +1,6 @@
-namespace ProjetoShow
+namespace ProjetoShow;
 
-public class Questao
+public class Questao()
 {
     public string Pergunta;
     public string Resposta1;
@@ -33,15 +33,17 @@ public class Questao
        botaoResposta3 = bt3;
        botaoResposta4 = bt4;
        botaoResposta5 = bt5;
+
      } 
+    
      public void ConfigurarDesenho(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
         labelPergunta = pg;
-        BotaoResposta1 = bt1;
-        BotaoResposta2 = bt2;
-        BotaoResposta3 = bt3;
-        BotaoResposta4 = bt4;
-        BotaoResposta5 = bt5;
+        botaoResposta1 = bt1;
+        botaoResposta2 = bt2;
+        botaoResposta3 = bt3;
+        botaoResposta4 = bt4;
+        botaoResposta5 = bt5;
      }
      public bool VerificarResposta(int RespostaRespondida)
      {
@@ -61,7 +63,7 @@ public class Questao
         return false;
        }
      } 
-     private Button QualBTN(int RespostaRespondida) 
+     private Button QualBTN (int RespostaRespondida) 
      {
        if (RespostaRespondida == RespostaCorreta);
      }
