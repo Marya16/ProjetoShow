@@ -25,11 +25,6 @@ public class Questao
       botaoResposta4.Text = Resposta4;
       botaoResposta5.Text = Resposta5;
      }
-    public Questao()
-     {
-
-     }
-      
     public Questao(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
        labelPergunta = pg;
@@ -41,7 +36,12 @@ public class Questao
      } 
      public void ConfigurarDesenho(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
-
+        labelPergunta = pg;
+        BotaoResposta1 = bt1;
+        BotaoResposta2 = bt2;
+        BotaoResposta3 = bt3;
+        BotaoResposta4 = bt4;
+        BotaoResposta5 = bt5;
      }
      public bool VerificarResposta(int RespostaRespondida)
      {

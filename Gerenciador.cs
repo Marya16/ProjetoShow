@@ -4,7 +4,7 @@ public class Gerenciador
     List<Questao>ListaQuestoes= new List<Questao>();
     List<int>ListaQuestoesRespondidas= new List<int>();
     Questao QuestaoCorrente;
-    public Gerenciador( Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnRespo4, Button btnResp5)
+    public Gerenciador(labelPerg, btnResp1, btnResp2, btnResp3, btnRespo4, btnResp5)
     {
         CriaPerguntas(labelPerg, btnResp1, btnResp2, btnResp3 , btnResp4, btnResp5);
     }
@@ -31,6 +31,7 @@ public class Gerenciador
         Q2.Resposta5 = "Vermelho";
         Q2 RespostaCorreta = 3;
         ListaQuestoes.Add(Q2);
+        ProximaQuestao();
     }
     public async void verificaCorreta(int RespostaRespondida)
     {

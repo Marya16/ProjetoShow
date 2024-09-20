@@ -34,14 +34,15 @@
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
                
-          <Label Text="Questão:" 
+          <Label x:Name="labelPergunta"
                  HorizontalTextAlignment="Center" 
                  FontSize="18"
                  TextColor="Black"/>
 
             </Frame>     
 
-                    <Button Text="A-"
+                    <Button x:Name="btn1"
+                            Clicked="OnBt1Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -52,7 +53,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="B-"
+                    <Button x:Name="btn2"
+                            Clicked="OnBt2Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -63,7 +65,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="C-"
+                    <Button x:Name="btn3"
+                            Clicked="OnBt3Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -74,7 +77,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="D-"
+                    <Button x:Name="btn4"
+                            Clicked="OnBt4Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -85,7 +89,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button Text="E-"
+                    <Button x:Name="btn5"
+                            Clicked="OnBt5Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
