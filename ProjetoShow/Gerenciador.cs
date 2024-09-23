@@ -34,14 +34,7 @@ public class Gerenciador
         ListaQuestoes.Add(Q2);
         ProximaQuestao();
     }
-    public async void verificaCorreta(int RespostaRespondida)
-    {
-        if (QuestaoCorrente.VerificarResposta(RespostaRespondida))
-        {
-            await Task.Delay (1000);
-            ProximaQuestao();        
-        }
-    }
+   
     void ProximaQuestao()
     {
         var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
@@ -63,7 +56,7 @@ public class Gerenciador
     ProximaQuestao();
   }  
 
-  public async void VerificaCorreta (int RespostaRespondida)
+  public async void VerificaCorreta(int RespostaRespondida)
   {
     if (QuestaoCorrente.VerificarResposta(RespostaRespondida))
     {

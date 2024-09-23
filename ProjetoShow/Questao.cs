@@ -17,7 +17,7 @@ public class Questao
     private Button botaoResposta3;
     private Button botaoResposta4;
     private Button botaoResposta5;
-    public void Desenhar()
+    public void Desenha()
      {
       labelPergunta.Text = Pergunta;
       botaoResposta1.Text = Resposta1;
@@ -63,8 +63,8 @@ public class Questao
        { 
         var btnCorreto = QualBotao (RespostaCorreta);
         var btnIncorreto = QualBotao (RespostaRespondida);
-        btnCorreto.BackgroundColor = Colors.Red;
-        btnIncorreto.BackgroundColor = Colors.Green;
+        btnCorreto.BackgroundColor = Colors.Green;
+        btnIncorreto.BackgroundColor = Colors.Red;
         return false;
        }
      } 
@@ -82,8 +82,4 @@ public class Questao
             return botaoResposta5;
      }
 
-    internal void Desenha()
-    {
-        throw new NotImplementedException();
-    }
 }

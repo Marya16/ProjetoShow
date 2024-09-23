@@ -42,8 +42,8 @@
 
             </Frame>     
 
-                    <Button x:Name="btn1"
-
+                    <Button x:Name="btnResp1"
+                            Clicked="OnBtnResposta01Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -54,8 +54,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="btn2"
-
+                    <Button x:Name="btnResp2"
+                            Clicked="OnBtnResposta02Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -66,8 +66,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="btn3"
-
+                    <Button x:Name="btnResp3"
+                            Clicked="OnBtnResposta03Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -78,8 +78,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="btn4"
-
+                    <Button x:Name="btnResp4"
+                            Clicked="OnBtnResposta04Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -90,8 +90,8 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="3"/>
 
-                    <Button x:Name="btn5"
-
+                    <Button x:Name="btnResp5"
+                            Clicked="OnBtnResposta05Clicked"
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
