@@ -1,6 +1,7 @@
+
 namespace ProjetoShow;
 
-public class Questao()
+public class Questao
 {
     public string Pergunta;
     public string Resposta1;
@@ -24,6 +25,10 @@ public class Questao()
       botaoResposta3.Text = Resposta3;
       botaoResposta4.Text = Resposta4;
       botaoResposta5.Text = Resposta5;
+     }
+    public Questao()
+     {
+      
      }
     public Questao(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
@@ -49,23 +54,36 @@ public class Questao()
      {
          if (RespostaCorreta == RespostaRespondida) 
        { 
-        var btn = QualBTN (RespostaRespondida);
-            btn.BackgroudColor = Colors.Green;
+        var btn = QualBotao (RespostaRespondida);
+            btn.BackgroundColor = Colors.Green;
             return true;
        }
          else 
          
        { 
-        var btnCorreta = QualBTN (RespostaCorreta);
-        var btnIncorreto = QualBTN (RespostaRespondida);
-        btnCorreto.BackgroudColor = Colors.Red;
-        btnIncorreto.BackgroudColor = Colors.Green;
+        var btnCorreto = QualBotao (RespostaCorreta);
+        var btnIncorreto = QualBotao (RespostaRespondida);
+        btnCorreto.BackgroundColor = Colors.Red;
+        btnIncorreto.BackgroundColor = Colors.Green;
         return false;
        }
      } 
-     private Button QualBTN (int RespostaRespondida) 
+     private Button QualBotao(int RespostaRespondida) 
      {
-       if (RespostaRespondida == RespostaCorreta);
+      if (RespostaRespondida ==1)
+          return botaoResposta1;
+      else if (RespostaRespondida ==2)
+        return botaoResposta2;
+      else if (RespostaRespondida ==3)
+        return botaoResposta3;
+      else if (RespostaRespondida ==4)
+        return botaoResposta4;
+        else 
+            return botaoResposta5;
      }
-     
+
+    internal void Desenha()
+    {
+        throw new NotImplementedException();
+    }
 }

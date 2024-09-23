@@ -4,7 +4,7 @@
              x:Class="ProjetoShow.MainPage"
              Shell.NavBarIsVisible="false">
     
-     <Grid>
+     <Grid> 
           <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="90"/>
@@ -34,6 +34,7 @@
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
                
+
           <Label x:Name="labelPergunta"
                  HorizontalTextAlignment="Center" 
                  FontSize="18"
@@ -42,7 +43,7 @@
             </Frame>     
 
                     <Button x:Name="btn1"
-                            Clicked="OnBt1Clicked"
+
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -54,7 +55,7 @@
                             Grid.ColumnSpan="3"/>
 
                     <Button x:Name="btn2"
-                            Clicked="OnBt2Clicked"
+
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -66,7 +67,7 @@
                             Grid.ColumnSpan="3"/>
 
                     <Button x:Name="btn3"
-                            Clicked="OnBt3Clicked"
+
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -78,7 +79,7 @@
                             Grid.ColumnSpan="3"/>
 
                     <Button x:Name="btn4"
-                            Clicked="OnBt4Clicked"
+
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -90,7 +91,7 @@
                             Grid.ColumnSpan="3"/>
 
                     <Button x:Name="btn5"
-                            Clicked="OnBt5Clicked"
+
                             BorderWidth="2"
                             BackgroundColor="#c99908"
                             TextColor="Black"
@@ -108,18 +109,18 @@
                                 TextColor="Black"
                                 BackgroundColor="#b58a07"
                                 Margin="0,0,0,10"
-                                FontSize="18"
+                                FontSize="15"
                                 BorderColor="Black"
                                 Grid.Row="7"
                                 Grid.Column="0"/>
                                
-                       <Button Text="Retirar 1" 
+                       <Button Text="Retirar 1  " 
                                 BorderWidth="2"
                                 Padding=".12"
                                 TextColor="Black"
                                 BackgroundColor="#b58a07"
                                 Margin="0,0,0,10"
-                                FontSize="18"
+                                FontSize="15"
                                 BorderColor="Black"
                                 Grid.Row="7"
                                 Grid.Column="1"/>
@@ -130,7 +131,7 @@
                               TextColor="Black"
                               BackgroundColor="#b58a07"
                               Margin="0,0,0,10"
-                              FontSize="18"
+                              FontSize="15"
                               BorderColor="Black"
                               Grid.Row="7"
                               Grid.Column="2"/> 
