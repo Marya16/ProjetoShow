@@ -25,6 +25,17 @@ public class Questao
       botaoResposta3.Text = Resposta3;
       botaoResposta4.Text = Resposta4;
       botaoResposta5.Text = Resposta5;
+
+    this.botaoResposta1!.BackgroundColor = Color.FromArgb("#c99908");
+    this.botaoResposta1!.TextColor       = Colors.Black;
+    this.botaoResposta2!.BackgroundColor = Color.FromArgb("#c99908");
+    this.botaoResposta2!.TextColor       = Colors.Black;
+    this.botaoResposta3!.BackgroundColor = Color.FromArgb("#c99908");
+    this.botaoResposta3!.TextColor       = Colors.Black;
+    this.botaoResposta4!.BackgroundColor = Color.FromArgb("#c99908");
+    this.botaoResposta4!.TextColor       = Colors.Black;
+    this.botaoResposta5!.BackgroundColor = Color.FromArgb("#c99908");
+    this.botaoResposta5!.TextColor       = Colors.Black;
      }
     public Questao()
      {

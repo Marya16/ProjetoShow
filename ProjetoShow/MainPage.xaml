@@ -50,7 +50,7 @@
                  Grid.ColumnSpan="2">
                
 
-          <Label Text="Pontuação:"
+          <Label x:Name="labelPontuacao"
                  HorizontalTextAlignment="Center" 
                  FontSize="16"
                  TextColor="Black"/>
@@ -64,7 +64,7 @@
                  Grid.Column="3">
                
 
-          <Label Text="Nível:"
+          <Label x:Name="labelNivel"
                  HorizontalTextAlignment="Center" 
                  FontSize="16"
                  TextColor="Black"/>
