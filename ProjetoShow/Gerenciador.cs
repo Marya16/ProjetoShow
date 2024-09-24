@@ -3,10 +3,14 @@ public class Gerenciador
 {
     List<Questao>ListaQuestoes= new List<Questao>();
     List<int>ListaQuestoesRespondidas= new List<int>();
+    Label labelPontuacao;
+    Label labelNivel;
     Questao QuestaoCorrente;
-    public Gerenciador( Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnResp4, Button btnResp5)
+    public Gerenciador( Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnResp4, Button btnResp5, Label labelPontuacao, Label labelNivel)
     {
         CriaPerguntas(labelPerg, btnResp1, btnResp2, btnResp3 , btnResp4, btnResp5);
+        labelPontuacao = labelPontuacao;
+        labelNivel = labelNivel;
     }
     void CriaPerguntas(Label labelPerg, Button btnResp1, Button btnResp2, Button btnResp3, Button btnResp4, Button btnResp5)
     {
@@ -23,6 +27,7 @@ public class Gerenciador
         ListaQuestoes.Add(Q1);
 
         var Q2 = new Questao();
+        Q1.NivelPergunta= 1;
         Q2.ConfigurarDesenho(labelPerg, btnResp1, btnResp2, btnResp3 , btnResp4, btnResp5);
         Q2.Pergunta = "Qual a cor da laranja?";
         Q2.Resposta1 = "Preto";
@@ -64,6 +69,8 @@ public class Gerenciador
         AdicionaPontuacao(NivelAtual);
         NivelAtual++;
         ProximaQuestao();
+        LabelPontuacao.Text= "Pontuacao: R$" + Pontuacao.ToString();
+        LabelNivel.Text= "Nivel:" + NivelAtual.ToString();
     }
     else
     {
