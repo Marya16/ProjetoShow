@@ -1,7 +1,7 @@
 
 namespace ProjetoShow;
 
-public class Questao
+public class Questao:IEquatable<Questao>
 {
     public string Pergunta;
     public string Resposta1;
@@ -41,6 +41,10 @@ public class Questao
      {
       
      }
+     public bool equals(Questao q)
+      {
+        return this.Nivel==Q.Nivel;
+      }
     public Questao(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
        labelPergunta = pg;

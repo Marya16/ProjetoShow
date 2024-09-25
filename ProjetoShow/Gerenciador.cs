@@ -25,7 +25,6 @@ public class Gerenciador
     ProximaQuestao();
 
   }  
-
   public async void VerificaCorreta(int RespostaRespondida)
   {
     if (QuestaoCorrente.VerificarResposta(RespostaRespondida))
@@ -48,6 +47,17 @@ public class Gerenciador
         labelPontuacao.Text= "Pontuacao: R$" + Pontuacao.ToString();
         labelNivel.Text= "Nivel:" + NivelAtual.ToString();
   }
+
+      void ProximaQuestao()
+    {
+        var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
+        while (ListaQuestoesRespondidas.Contains(numAleat))
+            numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
+        ListaQuestoesRespondidas.Add(numAleat);
+        QuestaoCorrente = ListaQuestoes[numAleat];
+        QuestaoCorrente.Desenha();
+    }
+
   void AdicionaPontuacao(int n)
   {
     if(n==1)
@@ -1275,14 +1285,5 @@ public class Gerenciador
         ProximaQuestao();
     }
    
-    void ProximaQuestao()
-    {
-        var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
-        while (ListaQuestoesRespondidas.Contains(numAleat))
-            numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
-        ListaQuestoesRespondidas.Add(numAleat);
-        QuestaoCorrente = ListaQuestoes[numAleat];
-        QuestaoCorrente.Desenha();
-    }
 
 }
