@@ -43,7 +43,7 @@ public class Questao:IEquatable<Questao>
      }
      public bool Equals(Questao q)
       {
-        return this.Nivel==Q.Nivel;
+        return this.NivelPergunta == q.NivelPergunta;
       }
     public Questao(Label pg, Button bt1, Button bt2, Button bt3, Button bt4, Button bt5)
      {
