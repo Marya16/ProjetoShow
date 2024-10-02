@@ -4,7 +4,7 @@ namespace ProjetoShow;
 
 public partial class MainPage : ContentPage
 {
-  Gerenciador gerenciador;
+  public Gerenciador gerenciador;
 	public MainPage()
 	{
 		InitializeComponent();
@@ -35,6 +35,13 @@ public partial class MainPage : ContentPage
   private void OnBtnResposta05Clicked(object sender, EventArgs e)
   {
     gerenciador!.VerificaCorreta(5);
+  }
+
+  private async void Retira3(object sender, EventArgs e)
+  {
+    var ajuda = new RetiraErradas();
+    ajuda.ConfiguraDesenho(btnResp1, btnResp2, btnResp3, btnResp4, btnResp5);
+    ajuda.RealizaAjuda(gerenciador.QuestaoCorrente);
   }
 }
 

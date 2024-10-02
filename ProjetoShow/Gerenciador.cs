@@ -14,7 +14,7 @@ public class Gerenciador
     }
     
   public int Pontuacao {get; private set;} 
-  int NivelAtual = 0;
+  int NivelAtual = 1;
 
 
     void Inicializar() 
@@ -51,11 +51,11 @@ public class Gerenciador
      public void ProximaQuestao()
     {
         var listaQuestoes= listaTodasQuestoes.Where(d=>d.NivelPergunta == NivelAtual).ToList();
-        var numRand= Random.Shared.Next(0,listaTodasQuestoes.Count-1);
+        var numRand= Random.Shared.Next(0, listaQuestoes.Count-1);
         var novaQuestao= listaQuestoes[numRand];
         while (listTodasQuestoesRespondidas.Contains(novaQuestao))
         {
-          numRand= Random.Shared.Next(0, listaTodasQuestoes.Count-1);
+          numRand= Random.Shared.Next(0, listaQuestoes.Count-1);
           novaQuestao= listaQuestoes[numRand];
         } 
         listTodasQuestoesRespondidas.Add(novaQuestao);
